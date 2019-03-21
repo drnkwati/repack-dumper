@@ -1,0 +1,46 @@
+{
+    "name": "drnkwati/repack-dumper",
+    "description": "Mechanism for exploring and dumping PHP variables.",
+    "keywords": ["dump", "debug"],
+    "license": "MIT",
+    "homepage": "https://laravel.com",
+    "support": {
+        "source": "https://github.com/drnkwati/framework"
+    },
+    "authors": [
+        {
+            "name": "Nkwati Divine",
+            "email": "drnkwati@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/var-dumper": ">=2.6"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Repack\\Dumper\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+        ],
+        "psr-4": {
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
