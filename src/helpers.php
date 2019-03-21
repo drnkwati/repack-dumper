@@ -1,5 +1,7 @@
 <?php
 
+use Repack\Dumper\Dumper;
+
 if (!function_exists('dd')) {
     /**
      * Dump the passed variables and end the script.
