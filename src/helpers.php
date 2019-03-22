@@ -27,9 +27,7 @@ if (!function_exists('dd')) {
 if (!function_exists('de')) {
     function de()
     {
-        array_map(function ($x) {
-            echo $x;
-        }, func_get_args());
+        array_map(function ($x) {echo $x;}, func_get_args());
 
         exit(1);
     }
