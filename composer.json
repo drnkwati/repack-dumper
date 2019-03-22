@@ -24,7 +24,7 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Repack\\Dumper\\": "src"
+            "Repack\\": "src"
         }
     },
     "autoload-dev": {
