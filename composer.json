@@ -3,9 +3,9 @@
     "description": "Mechanism for exploring and dumping PHP variables.",
     "keywords": ["dump", "debug"],
     "license": "MIT",
-    "homepage": "https://laravel.com",
+    "homepage": "https://github.com/drnkwati/repack-dumper",
     "support": {
-        "source": "https://github.com/drnkwati/framework"
+        "source": "https://github.com/drnkwati"
     },
     "authors": [
         {
@@ -14,10 +14,10 @@
         }
     ],
     "require": {
-        "php": ">=5.3.9",
-        "symfony/var-dumper": ">=2.6"
+        "php": ">=5.3.9"
     },
     "require-dev": {
+        "symfony/var-dumper": ">=2.6"
     },
     "autoload": {
         "files": [

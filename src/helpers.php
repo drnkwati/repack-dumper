@@ -11,10 +11,14 @@ if (!function_exists('dd')) {
      */
     function dd()
     {
-        array_map(function ($x) {
-            $dumper = new Dumper;
-            $dumper->dump($x);
-        }, func_get_args());
+        if (class_exists('\Symfony\Component\VarDumper\Dumper\HtmlDumper')) {
+            array_map(function ($x) {
+                $dumper = new Dumper;
+                $dumper->dump($x);
+            }, func_get_args());
+        } else {
+            array_map(function ($x) {var_dump($x);}, func_get_args());
+        }
 
         exit(1);
     }
