@@ -15,7 +15,7 @@ class Dumper
      */
     public function dump($value)
     {
-        $dumper = in_array(PHP_SAPI, ['cli', 'phpdbg']) ? new CliDumper : new HtmlDumper;
+        $dumper = in_array(PHP_SAPI, array('cli', 'phpdbg')) ? new CliDumper : new HtmlDumper;
 
         $cloner = new VarCloner;
 
